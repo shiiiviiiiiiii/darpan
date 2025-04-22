@@ -10,19 +10,19 @@ import { Award } from "lucide-react";
 
 const achievements = [
   {
-    img: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=500&q=80",
+    img: "/images/IMG_8959.JPG",
     title: "Zeitgeist Winners - IIT Roorkee",
     desc: "Won for best nukkad natak in Zeitgeist fest of IIT Roorkee.",
     color: "bg-funky-purple",
   },
   {
-    img: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=500&q=80",
+    img: "/images/IMG_6391.jpg",
     title: "TAMASHA - Theater show",
     desc: "Stage play where we performed 4 major plays.",
     color: "bg-funky-orange",
   },
   {
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    img: "/images/IMG_6707.jpg",
     title: "RASHMIRATHI",
     desc: "Performed the famous Rashmirathi in Thapar's annual cultural fest Saturnalia.",
     color: "bg-funky-green",

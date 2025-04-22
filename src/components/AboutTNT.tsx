@@ -1,4 +1,3 @@
-
 import { Users, Award, Info } from "lucide-react";
 import {
   Carousel,
@@ -9,11 +8,11 @@ import {
 } from "./ui/carousel";
 
 const aboutImages = [
-  "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=800&q=80"
+  "/images/IMG_8834.jpg",
+  "/images/IMG_8816.jpg",
+  "/images/IMG_8801.jpg",
+  "/images/DSCF8510.JPG",
+  "/images/DSCF8521.JPG"
 ];
 
 const AboutTNT = () => (
@@ -25,7 +24,7 @@ const AboutTNT = () => (
     <div className="lg:flex gap-12 items-center">
       <div className="flex-1 mb-12 lg:mb-0">
         <div className="relative w-full flex justify-center items-center">
-          <Carousel className="w-full max-w-[240px] mx-auto">
+          <Carousel className="w-full max-w-[600px] mx-auto">
             <CarouselContent>
               {aboutImages.map((img, idx) => (
                 <CarouselItem
@@ -34,19 +33,24 @@ const AboutTNT = () => (
                 >
                   <img
                     src={img}
-                    className="rounded-xl shadow-lg border-4 border-funky-orange w-40 h-52 object-cover object-center"
+                    className="rounded-xl shadow-lg border-4 border-funky-orange w-80 h-96 object-cover object-center"
                     alt={`TNT Performance ${idx + 1}`}
                   />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* Position arrows properly with more space around them */}
+            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 pl-4">
+              <CarouselPrevious />
+            </div>
+            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pr-4">
+              <CarouselNext />
+            </div>
           </Carousel>
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col gap-6">
+      <div className="flex-1 flex flex-col gap-6 pl-8"> {/* Added left padding to make space for arrows */}
         <div className="bg-funky-purple/10 p-6 rounded-2xl shadow-lg border-l-4 border-funky-purple transform hover:scale-105 transition-transform duration-300">
           <Users className="text-funky-purple bg-funky-purple/10 rounded-full w-12 h-12 p-2 shadow-lg mb-4" />
           <h3 className="font-poppins text-2xl font-bold text-white mb-2">

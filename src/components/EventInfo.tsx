@@ -21,7 +21,7 @@ const EventInfo = () => (
               <div className="relative inline-block">
                 <div className="absolute inset-0 bg-funky-purple rounded-full blur-xl opacity-30"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=340&q=80"
+                  src="/images/Darpan_invite@6x.png"
                   alt="DARPAN Event"
                   className="w-64 h-64 rounded-full object-cover border-4 border-funky-purple relative z-10"
                 />
@@ -80,7 +80,7 @@ const EventInfo = () => (
               href="#contact"
               className="inline-block bg-gradient-to-r from-funky-purple to-funky-orange text-white font-poppins font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-funky-purple/30 hover:scale-105 transition transform text-lg"
             >
-              Reserve Your Spot &rarr;
+              for queries &rarr;
             </a>
           </div>
         </div>
